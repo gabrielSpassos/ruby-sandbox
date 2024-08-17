@@ -18,4 +18,5 @@ class Flower
   end
 end
 
-Tree.new(Flower.new)
+t = Tree.new(Flower.new)
+t.to_s()
