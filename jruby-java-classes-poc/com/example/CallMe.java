@@ -2,7 +2,7 @@ package com.example;
 
 public class CallMe {
 
-    String mName;
+    private String mName;
 
     public CallMe() {
         this("Default Java CallMe Class");
@@ -16,7 +16,4 @@ public class CallMe {
         System.out.println("Hello from " + mName);
     }
     
-    public static void main(String []args) {
-        System.out.println("Called main");
-    }
 }

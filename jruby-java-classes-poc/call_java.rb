@@ -16,17 +16,15 @@ class CallJava
   end
   
   def addOne(from)
-#    m.synchronize {
       @count += 1
       puts "Now got #@count from #{from}"
-#    }
   end
 end
 
 puts "Hello from ruby"
 set = TreeSet.new
 set.add "foo"
-set.add "Bar"
+set.add "bar"
 set.add "foo"
 set.add "baz"
 set.each { |v| puts "value: #{v}" }
@@ -40,4 +38,4 @@ rubyCM.hello
 cj = CallJava.new
 cj.say("hello with java interface")
 cj.addOne("ruby script")
-cj.addOne("ruby script 2")
+cj.addOne("ruby script")
