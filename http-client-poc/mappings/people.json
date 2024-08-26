@@ -1,0 +1,23 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/api/people"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": [
+            {
+                "name": "Gabriel",
+                "lastName": "Passos"
+            },
+            {
+                "name": "John",
+                "lastName": "Doe"
+            }
+        ],
+        "fixedDelayMilliseconds": 500,
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
