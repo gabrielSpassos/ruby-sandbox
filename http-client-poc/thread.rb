@@ -30,7 +30,7 @@ client = Client.new
 
 threads = []
 results = []
-1000.times do
+100.times do
   threads << Thread.new { Thread.current[:output] = client.run }
 end
 threads.each do |t|
